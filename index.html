@@ -53,20 +53,21 @@
       animation: fadeUp 0.8s ease both;
     }
 
-    .logo-wrap {
-      display: inline-block;
-      position: relative;
-      margin-bottom: 28px;
+    /* ── BACKGROUND LOGO ── */
+    .bg-logo {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 0;
+      pointer-events: none;
     }
 
-    .logo-wrap img {
-      width: 120px;
-      height: 120px;
+    .bg-logo img {
+      width: 100vmin;
+      height: 100vmin;
       display: block;
-      transition: transform 0.3s ease;
-    }
-    .logo-wrap:hover img {
-      transform: scale(1.04) rotate(-1deg);
     }
 
     h1 {
@@ -75,11 +76,7 @@
       font-size: clamp(2.4rem, 8vw, 3.6rem);
       letter-spacing: -0.02em;
       line-height: 1.05;
-      background: linear-gradient(135deg, #e6b800 0%, var(--orange) 30%, var(--red) 50%, var(--pink) 70%, var(--purple) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 16px;
+color: #000;
     }
 
     .tagline {
@@ -180,12 +177,13 @@
 </head>
 <body>
 
+  <div class="bg-logo">
+    <img src="Pentangle_logo-colour.svg" alt="" aria-hidden="true" />
+  </div>
+
   <div class="wrapper">
 
     <header>
-      <div class="logo-wrap">
-        <img src="Pentangle_logo-colour.png" alt="Pentangle logo" />
-      </div>
       <h1>Pentangle</h1>
       <p class="tagline">Culture in common</p>
 
