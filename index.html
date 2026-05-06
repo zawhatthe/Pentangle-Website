@@ -133,6 +133,23 @@ letter-spacing: -0.02em;
 	padding: 20px;
     }
 
+    /* ── SUPPORT LINK ── */
+    .support {
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+    .support a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      padding-bottom: 1px;
+      transition: border-color 0.2s;
+    }
+    .support a:hover {
+      border-bottom-color: var(--text);
+    }
+
 
     /* ── FOOTER ── */
     footer {
@@ -149,6 +166,14 @@ letter-spacing: -0.02em;
     footer p {
       font-size: 0.78rem;
       color: var(--muted);
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: var(--text);
     }
 
     /* ── ANIMATIONS ── */
@@ -181,6 +206,7 @@ letter-spacing: -0.02em;
           <span class="big">App Store</span>
         </span>
       </a>
+      <p class="support">Questions or feedback? <a href="mailto:hello@pentangle.app">Contact support</a></p>
 </div>
 
     <footer>
